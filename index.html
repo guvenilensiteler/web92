@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Güvenilen Siteler</title>
-    <link rel="stylesheet" href="https://web.onerilenyerler.com/css/new.css?v5.47">
-    <link rel="shortcut icon" href="https://web.onerilenyerler.com/favicon.png">
+    <link rel="stylesheet" href="https://goldenvipler.com/css/new.css?v5.47">
+    <link rel="shortcut icon" href="https://goldenvipler.com/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,13 +13,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3JDDTLKMLV"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4X4CS0XXDQ"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-3JDDTLKMLV');
+        gtag('config', 'G-4X4CS0XXDQ');
     </script>
 
     <script>
@@ -380,7 +380,7 @@
                 });
             }
         </script>
-        <div class="row diamond random-algoritmasi"  :class="['cat' + vip.id, 'banner' + diamond.grid]">
+        <div class="row diamond random-algoritmasi_IPTAL"  :class="['cat' + vip.id, 'banner' + diamond.grid]">
             <div class="col" v-if="_.find(client.sites, ['site', site.site])" v-for="(site,siteKey) in _.orderBy(diamond.sites, [item => parseInt(item.sort)], ['asc'])" >
                 <a target="_blank" onclick="click_say(this)" :site="_.find(client.sites, ['site', site.site]).site"  :href="_.find(client.sites, ['site', site.site]).url" class="item" v-bind:style="{
     '--site-color': _.find(client.sites, ['site', site.site]).color,
@@ -515,7 +515,7 @@
         },
         created(){
             this.loading = true;
-            axios.get('https://web.onerilenyerler.com/data.json?v=0.0.86')
+            axios.get('https://goldenvipler.com/data.json?v=0.0.4')
                 .then((response) => {
                     this.client = response.data.html
                     this.king = _.find(this.client.categories, ['id', 1710467155101]);
@@ -604,6 +604,7 @@
 </script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+    /*
     is_element_load = setInterval(function(){
         let e = document.querySelectorAll('.row.diamond:not(.clover) .col').length;
         if (e && e.length!=0) {
@@ -626,7 +627,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                     return array.join('');
                 }
-                result = shuffleString("abcdefghijklm"); // alfabetik sıraya göre git kafana göre harf verme
+                result = shuffleString("abcdefghijklmnopq"); // alfabetik sıraya göre git kafana göre harf verme
 
                 if (result != '') { //sunucudan veri dönmezse
                     firmalar_element = document.querySelectorAll('.row.diamond:not(.clover) .col');
@@ -640,7 +641,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         var firmalar_temp = [];
                         var i = 0;
                         firmalar_element.forEach(function(F) {
-                            if (['onwin','tipobet','sahabet','misty','marsbahis','palazzobet','grandpashabet','bahibom','betsin','mersobahis','amgbahis'].includes(F.querySelector('a[site]').getAttribute('site'))) {
+                            if (['tipobet','bayspin','onwin','starzbet','sahabet','ligobet','bycasino'].includes(F.querySelector('a[site]').getAttribute('site'))) {
                                 en_uste_ekle += F.outerHTML;
                             } else {
                                 firmalar_temp[indis[i++]] = F.outerHTML;
@@ -670,6 +671,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
     },50);
+    */
 });
 </script>
 
